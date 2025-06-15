@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  padding: 11rem 2rem 2rem;
+  background-color: #fff;
+  color: #05073c;
+  line-height: 1.6;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  color: #eb662b;
+  padding: 3rem 10rem;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #05073c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-container h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #0a0a23;
+}
+
+.contact-container p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background-color: #ff834e;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #eb662b;
+  transition: ease 0.3s;
+}
+
+
+
+.footer {
+  background-color: #FEF7F4;
+  color: #05073C;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+  border: 1px solid #FBE1D6;
+  border-radius: 8px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #05073C;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.footer-links a:hover {
+  color: #090c65;
+}

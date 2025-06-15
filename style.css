@@ -1,0 +1,511 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  padding: 8.2rem 2rem 2rem;
+  background-color: #fff;
+  color: #05073c;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  color: #eb662b;
+  padding: 3rem 10rem;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #05073c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url("./images/header-bg.svg") no-repeat center bottom/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  height: 34rem;
+  padding: 100px 20px;
+}
+
+.hero .container {
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.search-box {
+  display: flex;
+  gap: 15px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 12px;
+  padding: 10px 15px;
+  max-width: 15rem;
+  flex: 1;
+}
+
+.search-field .checkbox {
+  border: 2px solid #e7e6e6;
+  border-radius: 0.7rem;
+  width: 50px;
+  height: 50px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.search-field .category-box {
+  text-align: start;
+}
+
+.search-field .category-box p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #05073c;
+  margin: 0;
+}
+.search-field .category-box span {
+  font-size: 0.7rem;
+  color: #555;
+}
+
+.search-button {
+  background-color: #f26522;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #d4551b;
+}
+
+.features {
+  padding: 4rem 10rem 0;
+  width: 100%;
+}
+
+.features h2 {
+  margin-bottom: 2rem;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+.feature i {
+  font-size: 40px;
+  color: #ff6600;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.popular-tours {
+  max-width: 1200px;
+  margin: 6rem 10rem 0;
+}
+
+.popular-tours h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #05073c;
+}
+
+.popular-tours .see-all {
+  font-size: 20px;
+  color: #eb662b;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.tour-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+}
+
+.tour-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.tour-content {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tour-location {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.tour-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.tour-info {
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tour-price {
+  font-weight: bold;
+  color: #222;
+  font-size: 14px;
+}
+
+.planning-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 40px;
+  width: 100%;
+  margin: 6rem auto 0;
+  padding: 0 10rem;
+}
+
+.planning-text {
+  flex: 1;
+  color: #0a0a23;
+}
+
+.planning-text h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.planning-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.planning-text button {
+  background-color: #0a0a23;
+  color: white;
+  padding: 18px 38px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.planning-image {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  min-width: 100%;
+  min-height: 200px;
+  background-image: url("./images/plane-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  border-left: 10px solid transparent;
+  background-color: #f2f1ec;
+}
+
+.things-section {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 4rem auto 0;
+  font-family: sans-serif;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #05073c;
+}
+
+.section-header a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #eb662b;
+  cursor: pointer;
+  text-decoration: none;
+}
+.things-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 20px;
+}
+
+.thing-card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.thing-card:hover {
+  transform: scale(1.02);
+}
+
+.thing-card:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.thing-card:nth-child(2) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.thing-card:nth-child(3) {
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+}
+
+.thing-card:nth-child(4) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.thing-card:nth-child(5) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.thing-card:nth-child(6) {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+.subscribe-section {
+  padding: 40px 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  color: white;
+  overflow: hidden;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.subscribe-content {
+  width: 100%;
+  background-color: #06063F;
+  background-image: url(./images/subscribe-bg.svg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  padding: 4rem;
+}
+
+.subscribe-content h2 {
+  width: 30rem;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subscribe-content p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.subscribe-form {
+  padding: 0.6rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 2px;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  color: white;
+  outline: none;
+  border-radius: 8px;
+}
+
+.subscribe-form input::placeholder {
+  color: #bbb;
+}
+
+.subscribe-form button {
+  border-radius: 8px;
+  background-color: #6a5cff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.subscribe-image img {
+  max-height: 260px;
+  object-fit: contain;
+}
+
+
+.footer {
+  background-color: #FEF7F4;
+  color: #05073C;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+  border: 1px solid #FBE1D6;
+  border-radius: 8px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #05073C;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.footer-links a:hover {
+  color: #090c65;
+}
